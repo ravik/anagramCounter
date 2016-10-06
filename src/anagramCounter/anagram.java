@@ -25,8 +25,17 @@ public class anagram {
 	
 	public static void main(String args[]){
 		createHashMap();
-		String[] in = {"abc","def","cba","efd","ghi"};
-		System.out.println(pairOfAnagrams(in));
+		Scanner a = new Scanner(System.in);
+		System.out.println("Enter number of entries: ");
+		int count = Integer.parseInt(a.nextLine());
+		String[] in = new String[count];
+		for (int i = 0; i < count; i++){
+			System.out.println("Enter next string: ");
+			in[i] = a.nextLine();
+			System.out.println();
+		}
+		
+		System.out.println("There are "+ pairOfAnagrams(in) + "pair(s) of anagrams in that string.");
 	}
 
 
