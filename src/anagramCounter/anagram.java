@@ -5,7 +5,7 @@ import java.util.*;
 
 public class anagram {
 	static HashMap<Character, Integer> l2a = new HashMap<Character, Integer>();
-	static int[] nums = {2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27};
+	static int[] nums = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107};
 	static String alpha = "abcdefghijklmnopqrstuvwxyz";
 	
 	public static void createHashMap(){
